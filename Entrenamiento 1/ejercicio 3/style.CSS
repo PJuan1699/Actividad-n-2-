@@ -1,0 +1,70 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; 
+}
+
+.layout-container {
+    width: 80%;          
+    min-height: 100vh;  
+    margin: 0 auto;      
+    border: 0.1rem solid black; 
+    background-color: #f4f4f4; 
+}
+
+.main-header {
+    background-color: #eeeeee;
+    border-bottom: 0.1rem solid black;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.main-header nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.container-indice, #Hamburguesas, #Empanadas, #Milanesas-con-púre, #Choripan {
+    padding: 2rem;
+    margin: 1.5rem;
+}
+
+#Hamburguesas, #Empanadas, #Milanesas-con-púre, #Choripan {
+    background-color: #d1e0f9; 
+    border: 0.05rem solid #777;
+    position: relative; 
+}
+
+h1, h2 {
+    margin-bottom: 1rem;
+}
+
+ol {
+    margin-left: 2rem;
+}
+
+h2 {
+    display: flex;
+    justify-content: space-between; 
+    align-items: baseline;
+    margin-bottom: 1rem;
+}
+
+h2 a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem; 
+    font-weight: normal;
+}

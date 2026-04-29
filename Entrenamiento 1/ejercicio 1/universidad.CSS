@@ -1,0 +1,23 @@
+body {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-datos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.container-img img {
+    width: 10rem;
+    height: 10rem;
+}
+
+.container-exp, .container-est {
+    width: 80%;
+    height: 100%;
+}
