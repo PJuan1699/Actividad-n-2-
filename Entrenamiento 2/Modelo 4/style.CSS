@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.6em;
+}
+
+
+body {
+    height: 100vh;
+}
+
+.div1,
+.div2,
+.div3,
+.div4,
+.div5,
+.div6 {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-section {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 22% 22% 1fr;
+    grid-template-rows: 1fr 1fr 38.5%;
+}
+
+.div1 {
+    background-color: green;
+    grid-row: span 2;
+    order: 1;
+}
+
+.div2 {
+    background-color: yellow;
+    grid-column: span 2;
+    order:2;
+}
+
+.div3{
+    background-color: yellow;
+    grid-column: span 2;
+    order: 4;
+}
+.div4{
+    background-color: green;
+    grid-row:span 2;
+    order:3;
+}
+.div5{
+     background-color: pink;
+     grid-column: span 2;
+     order:5;
+}
+.div6 {
+    background-color: blue;
+    order:6;
+    grid-column: span 2;
+    
+}
+
+@media(max-width:60em){
+
+    .container-section{
+        display:grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: repeat(3,1fr);
+        height: 100vh;
+    }
+    .div1,.div2, .div3,.div4,.div5,.div6{
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+    .div1{
+        order:1; background-color: green;
+    }
+    .div2{
+        order:2; background-color: green;
+    }
+    .div3{
+        order:3;
+    }
+    .div4{
+        order:4; background-color: yellow;
+    }
+    .div5{
+        order:5;
+    }
+    .div6{
+        order:6;
+    }
+}
+
+@media (max-width: 48em) {
+
+    *{
+        font-size: 150%;
+    }
+
+     .container-section{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: none;
+        height: 100vh;
+    }
+
+    .div1{
+        grid-column: span 1;
+        grid-row: span 1;
+        background-color: green;
+        order:1;
+        
+    }
+    .div2{
+        grid-column: span 1;
+        grid-row: span 1;
+        background-color: green;
+        order:2;
+        
+    }
+    .div3{
+        grid-column: span 1;
+        grid-row: span 1;
+        order:3;
+        
+    }
+    .div4{
+        grid-column: span 1;
+        grid-row: span 1;
+        background-color: yellow;
+        order:4;
+        
+    }
+    .div5{
+        grid-column: span 1;
+        grid-row: span 1;
+        background-color: blue;
+        order:5;
+       
+    }
+    .div6{
+        grid-column: span 1;
+        grid-row: span 1;
+        background-color: pink;
+        order:6;
+    }  
+}
+
